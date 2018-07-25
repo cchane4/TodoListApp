@@ -1,8 +1,8 @@
-body { 
-    color: purple; 
-}
+
+
 #container { 
-    background: gray; 
+border: 2px solid grey;  
     width: 360px; 
+    margin: 0 auto; 
 
 }
