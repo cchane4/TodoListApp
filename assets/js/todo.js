@@ -1,7 +1,7 @@
 //Check off todos by clicking 
-$("ul").on("click", "li", function(){ 
+$("ul").on("click", "li", e  => { 
     // if li is grey turn it black else turn it gray
-    $(this).toggleClass("completed"); 
+    $(e.currentTarget).toggleClass("completed"); 
 }); 
 
 $("ul").on("click", "span", function(event){ 
@@ -22,6 +22,7 @@ $("input[type='text'").keypress(function(event){
     }
 })
 
-$("fa-plus").click(function(){ 
+//clicking the plus button toggles the input field on and off 
+$(".fa-plus").click (event => { 
     $("input[type='text'").fadeToggle(); 
 });
