@@ -22,5 +22,6 @@ $("input[type='text'").keypress(function(event){
     }
 })
 
-/* here the functionality changed from click to on click so that the functions can work on 
-newly created tasks in the code */
+$("fa-plus").click(function(){ 
+    $("input[type='text'").fadeToggle(); 
+});
