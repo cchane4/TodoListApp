@@ -4,21 +4,21 @@ $("ul").on("click", "li", e  => {
     $(e.currentTarget).toggleClass("completed"); 
 }); 
 
-$("ul").on("click", "span", function(event){ 
+$("ul").on("click", "span", (event) => { 
     // here this refers to the span element
-    $(this).parent().fadeOut(500,function(){
+    $(event.currentTarget).parent().fadeOut(500,() => {
         // here this refers to the li element  
-        $(this).remove(); 
+        $(event.currentTarget).remove(); 
     });  
     event.stopPropagation(); 
     
 }); 
 
-$("input[type='text'").keypress(function(event){ 
+$("input[type='text'").keypress (event => { 
     if(event.which === 13){ 
-    let todoText = $(this).val();
- $(this).val(""); 
- $("ul").append("<li><span><i class='fa fa-trash'></i></span> "+ todoText +"</li>"); 
+    let todoText = $(event.currentTarget).val();
+    $(event.currentTarget).val(""); 
+    $("ul").append("<li><span><i class='fa fa-trash'></i></span> "+ todoText +"</li>"); 
     }
 })
 
