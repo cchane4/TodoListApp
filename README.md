@@ -9,6 +9,7 @@ A simple To-Do List
 
 ## Installing 
 - Clone this repository to your local machine with `git clone http://github.com/cchane4/NYT-Scraper.git`.
+- Open `index.html` in a web browser and use interact with the ToDo List.
 
 ## Author
 - Chad Chaney - [cchane4](https://github.com/cchane4)
