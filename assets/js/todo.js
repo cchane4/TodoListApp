@@ -4,6 +4,11 @@ $("ul").on("click", "li", e  => {
     $(e.currentTarget).toggleClass("completed"); 
 }); 
 
+
+/* NOTE: the 'this' key word would work in substitute for the 'event.currentTarget' when writing in old javascript but 
+ES6 notation runs into scoping issues when trying to target the right element so using 'event.currentTarget' is a workaround that 
+accomplishes the task at hand*/ 
+
 $("ul").on("click", "span", (event) => { 
     // here this refers to the span element
     $(event.currentTarget).parent().fadeOut(500,() => {
